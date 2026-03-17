@@ -1,98 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpit | Web Designer</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-        }
-        header h1 {
-            font-size: 40px;
-        }
-        header p {
-            color: #94a3b8;
-        }
-        .btn {
-            padding: 10px 20px;
-            background: #38bdf8;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #94a3b8;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arpit | Web Designer</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:rgba(0,0,0,0.3);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+color:#94a3b8;
+margin:15px 0;
+}
+
+.btn{
+background:#38bdf8;
+padding:10px 20px;
+border-radius:5px;
+color:black;
+text-decoration:none;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* PROJECTS */
+.projects{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:10px;
+width:260px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+}
+</style>
+
 </head>
 <body>
 
-<header>
-    <h1>Hi, I'm Arpit 👋</h1>
-    <p>Web Designer | HTML | CSS | Responsive Design</p>
-    <a href="#projects" class="btn">View Work</a>
-</header>
+<!-- NAVBAR -->
+<nav>
+<h2>Arpit</h2>
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
+<!-- HERO -->
+<div class="hero">
+<h1>Hi, I'm Arpit 👋</h1>
+<p>Web Designer | HTML | CSS | Responsive UI</p>
+<a href="#projects" class="btn">View My Work</a>
+</div>
+
+<!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>I create clean and responsive websites using HTML and CSS. I focus on user-friendly design and modern layouts.</p>
+<h2>About Me</h2>
+<p>I create modern, clean and responsive websites. I focus on user experience and fast delivery for clients.</p>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
+<h2>My Projects</h2>
 
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Personal responsive portfolio design.</p>
-        </div>
+<div class="projects">
 
-        <div class="card">
-            <h3>Business Landing Page</h3>
-            <p>Modern landing page for a small business.</p>
-        </div>
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal responsive portfolio design.</p>
+<a href="portfolio.html" class="btn">View</a>
+</div>
 
-        <div class="card">
-            <h3>Login Page UI</h3>
-            <p>Clean login/signup interface.</p>
-        </div>
+<div class="card">
+<h3>Gym Landing Page</h3>
+<p>Modern business landing page.</p>
+<a href="gym.html" class="btn">View</a>
+</div>
 
-    </div>
+<div class="card">
+<h3>Login Page UI</h3>
+<p>Clean authentication UI design.</p>
+<a href="login.html" class="btn">View</a>
+</div>
+
+</div>
+
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
+<h2>Contact</h2>
+<p>Email: your@email.com</p>
 </section>
 
 <footer>
-    <p>© 2026 Arpit | Web Designer</p>
+<p>© 2026 Arpit | Web Designer</p>
 </footer>
 
 </body>
